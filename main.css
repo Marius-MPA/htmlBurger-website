@@ -717,6 +717,14 @@ footer p {
     }
 }
 
-
+@media screen and (max-width: 426px) {
+    body {
+        min-width: 430px!important;
+    }
+    #section-left .htmlburger {
+        width: 80%;
+        height: auto;
+    }
+}
 
 
