@@ -3,559 +3,729 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Box Icons -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="img/MPA-logo.jpg" type="image/icon type">
-    <title>Responsive Portfolio Marius</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>We Convert Your Design into Pixel</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+         <!-- font awesome CDN-->
+    <script src="https://kit.fontawesome.com/711963be5a.js" crossorigin="anonymous"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- icon at title !!!-->
+    <link rel="shortcut icon" type="image/png" href="./images/title-img.jpg"/> 
+    <!-- Google Fonts Robot 400  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+<!--  header -->
+<header>
+<!-- navbar of header-->
+<section class="container-fluid bg-warning" id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light mx-3">
+        <a class="navbar-brand" href="#"><img src="images/logo-2.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2 ">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item font-weight-bold text-capitalize" href="#"><img src="images/front-end.png">&nbsp; Front-End coding</a>
+                  <a class="dropdown-item font-weight-bold text-capitalize" href="#"><img src="images/wordpress.png">&nbsp; WordPress Development</a>
+                  <a class="dropdown-item font-weight-bold text-capitalize" href="#"><img src="images/html-email.png">&nbsp; Email Template Coding</a>
+                  <a class="dropdown-item font-weight-bold text-capitalize" href="#"><img src="images/shopify.png">&nbsp;Shopify Development</a>
+              </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">Samples</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">for agencies</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">reviewes</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-uppercase font-weight-bold" href="#">labs</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link active text-uppercase font-weight-bold" href="#">Order now<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link text-uppercase font-weight-bold" href="#"><i class="fas fa-unlock-alt"></i><span class="sr-only">(login)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</section>
+<!-- intro (yellow) of header -->
+<section id="header" class="container-fluid bg-warning py-5">
+    <div class="row mt-4">
+        <!-- left side -->
+        <div class="col-lg-6 text-center mt-5 pt-5" id="section-left">
+            <img class="img-fluid htmlburger" src="images/htmlburger.png" alt="htmlburger img">
+            <img class="img-fluid cups" src="images/html-cup.png" alt="html-cup img">
+            <img class="img-fluid cups" src="images/css-cup.png" alt="css-cup img">
+        </div>
+        <!-- right-side -->
+        <div class="col-lg-6 mt-5" id="section-right">
+            <h3 class="text-capitalize text-black">agencies, businesses and freelancers</h3>
+            <h1 class="text-capitalize font-weight-bold pt-3">you design.</h1>
+            <h1 class="text-capitalize font-weight-bold">we code.</h1>
+            <div class="py-3"><i class="fas fa-sliders-h fa-2x"></i></div>
+            <h5 class="text-muted py-2">High-class HTML/CSSmarkup and WordPress, WooCommerce,
+                 Shopify, Craft CMS and SquareSpace implementation.</h5>
+            <!-- btns -->
+            <div class="buttons my-4 d-flex align-items-center">
+                <a href="#" class="btn-header">
+                    <span>Get a Quick Quote</span>
+                    <p class="btn-shadow"></p>
+                </a>
+                <p class="align-self-center mb-0 mx-3">or</p>
+                <a href="#" class="btn-header">
+                    <span>Schedule a call</span>
+                    <p class="btn-shadow"></p>
+                </a>
             </div>
-            <div>
-                <a href="#" class="nav__logo">Marius</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x' ></i>
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#works" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="l-main">
-        <!-- Home section -->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <div class="home__img">
-                        <img src="img/IMG_20190821_123602-1-removebg-preview.png" alt="">
-                    </div>
-                    <h1 class="home__title">Marius Pa&#351;cal&#259;u</h1>
-                    <span class="home__profession">Junior Frontend Developer</span>
-                    <div class="home__social">
-                        <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-github'></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-twitter'></i></a>
-                    </div>
-                    <a download="" href="#" class="button home__button">Download Resume</a>
-                </div>
-            </div>
-        </section>
-        <!-- About section -->
-        <section class="about section" id="about">
-            <span class="section-subtitle">My intro</span>
-            <h2 class="section-title">About Me</h2>
-            <div class="about__container bd-grid">
-                <div class="about__data">
-                    <p class="about__description">
-                        Hi, I am a Junior Frontend Developer, passionate about creating and developing web interfaces. I have 2 years of experience in this area of work, with some quality projects.
-                    </p>
-                    <img src="img/20180425_094638.jpg" alt="" class="about__img">
-                </div>
-                <div>
-                    <div class="about__information">
-                        <h3 class="about__information-title">Information</h3>
-                        <div class="about__information-data">
-                            <i class='bx bx-user about__information-icon' ></i>
-                            <span>Marius Pascalau</span>
-                        </div>
-                        <div class="about__information-data">
-                            <i class='bx bx-phone about__information-icon' ></i>
-                            <span>0040 741 509 596</span>
-                        </div>
-                        <div class="about__information-data">
-                            <i class='bx bx-envelope about__information-icon' ></i>
-                            <span>pascalau_marius@yahoo.com</span>
-                        </div>
-                    </div>
-                    <div class="about__information">
-                        <h3 class="about__information-title">Experience and Support</h3>
-                        <div class="about__information-data">
-                            <i class='bx bx-medal about__information-icon'></i>
-                            <div>
-                                <span class="about__information-subtitle">2 Years Job</span>
-                                <span class="about__information-subtitle-small">Experience</span>
-                            </div>
-                        </div>
-    
-                        <div class="about__information-data">
-                            <i class='bx bx-briefcase about__information-icon'></i>
-                            <div>
-                                <span class="about__information-subtitle">10+ Projects</span>
-                                <span class="about__information-subtitle-small">Completed</span>
-                            </div>
-                        </div>
-    
-                        <div class="about__information-data">
-                            <i class='bx bx-support about__information-icon'></i>
-                            <div>
-                                <span class="about__information-subtitle">Support</span>
-                                <span class="about__information-subtitle-small">Online 24/7</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills section -->
-        <section class="skills section" id="skills">  <!-- id = 'skills' -->
-            <span class="section-subtitle">Why Choose Me</span>
-            <h2 class="section-title">My Expertise Area</h2>
-            <div class="skills__container bd-grid">
-                <div class="skills__content">
-                    <h3 class="skills__subtitle">Frontend</h3>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Html</span>
-                        <span class="skills__number">75%</span>
-                        <span class="skills__bar skills__html"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__number">65%</span>
-                        <span class="skills__bar skills__css"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">SCSS</span>
-                        <span class="skills__number">30%</span>
-                        <span class="skills__bar skills__scss"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">JavaScript</span>
-                        <span class="skills__number">50%</span>
-                        <span class="skills__bar skills__javascript"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Angular</span>
-                        <span class="skills__number">40%</span>
-                        <span class="skills__bar skills__angular"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Bootstrap</span>
-                        <span class="skills__number">70%</span>
-                        <span class="skills__bar skills__bootstrap"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Visual Studio Code</span>
-                        <span class="skills__number">70%</span>
-                        <span class="skills__bar skills__studiocode"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Git & GitHub</span>
-                        <span class="skills__number">60%</span>
-                        <span class="skills__bar skills__git"></span>
-                    </div>
-                </div>
-                <div class="skills__content">
-                    <h3 class="skills__subtitle">Organizational</h3>
-
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Good working experience in multicultural environment (Romania, Canada, US, Germany, France, China)</span>
-                    </div>
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Good communicating skills</span>
-                    </div>
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Very good work attitude</span>
-                    </div>
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Good problem-solving skills</span>
-                    </div>
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Capacity to handle fruitfully many projects simultaneously</span>
-                    </div>
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">AGILE methodologies</span>
-                    </div>
-                    
-                </div>
-                <div class="skills__content-languages">
-                    <h3 class="skills__subtitle">Languages</h3>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Romanian</span>
-                        <span class="skills__number">100%</span>
-                        <span class="skills__bar skills__romanian"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">English</span>
-                        <span class="skills__number">90%</span>
-                        <span class="skills__bar skills__english"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">French</span>
-                        <span class="skills__number">65%</span>
-                        <span class="skills__bar skills__french"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Italian</span>
-                        <span class="skills__number">30%</span>
-                        <span class="skills__bar skills__italian"></span>
-                    </div>
-                    
-                </div>
-                <div class="skills__content-languages">
-                    <h3 class="skills__subtitle">Other</h3>
-
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">Programming CNC Machines (G-Code)</span>
-                    </div>
-
-                    <div class="skills__data-o">
-                        <span class="education__rounder"></span>
-                        <span class="skills__name">MS Office</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Education section -->
-        <section class="education section" id="education">
-            <span class="section-subtitle">Qualification</span>
-            <h2 class="section-title">My Education</h2>
-            <div class="education__container bd-grid">
-                <div class="education__content-main">
-                    <h3 class="education__subtitle">Academic Background</h3>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2012 - 2013</h3>
-                            <span class="education__university">Technical University of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Post-University degree</h3>
-                            <span class="education__speciality">Management</span>
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2002 - 2003</h3>
-                            <span class="education__university">Technical University of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Post-University degree</h3>
-                            <span class="education__speciality">Engineering</span>
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">1997 - 2002</h3>
-                            <span class="education__university">Technical University of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">University Graduate</h3>
-                            <span class="education__speciality">Mechanical Engineer</span>
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">1993 - 1997</h3>
-                            <span class="education__university">High School "Nicolae Balcescu" of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Diploma</h3>
-                            <span class="education__speciality">Informatics</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="education__content-main">
-                    <h3 class="education__subtitle">Training & Courses</h3>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2018 - 2020</h3>
-                            <span class="education__university">Private Mentorship</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Training: HTML 5, CSS 3, Bootstrap 4, SCSS, JavaScript, Angular 8</h3>
-                            <!-- <span class="education__speciality">Management</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2016 - 2016</h3>
-                            <span class="education__university">Extern Company</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Training: Statistical Process Control (Gage R&R, Cm, Cmk, Cp, Cpk, Pp, Ppk)</h3>
-                            <!-- <span class="education__speciality">Engineering</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2014 - 2014</h3>
-                            <span class="education__university">Extern Company</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Course: Communication and Negotiation</h3>
-                            <!-- <span class="education__speciality">Mechanical Engineer</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2005 - 2005</h3>
-                            <span class="education__university">Technical University of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Course: Solid Works Designer Certificate</h3>
-                            <!-- <span class="education__speciality">Informatics</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2002 - 2003</h3>
-                            <span class="education__university">Mentor</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Training: CNC machines programming (G-code)</h3>
-                            <!-- <span class="education__speciality">Informatics</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">2000 - 2002</h3>
-                            <span class="education__university">Technical University of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Course: Teacher Certificate</h3>
-                            <!-- <span class="education__speciality">Informatics</span> -->
-                        </div>
-                    </div>
-                    <div class="education__content">
-                        <div>
-                            <h3 class="education__year">1993 - 1997</h3>
-                            <span class="education__university">High School "Nicolae Balcescu" of Cluj-Napoca</span>
-                        </div>
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="education__race">Course: Programming Analyst Certificate</h3>
-                            <!-- <span class="education__speciality">Informatics</span> -->
-                        </div>
-                    </div>
-                </div>
+            <!-- scroll -->
+            <img src="images/scroll.png" alt="scroll down" class="scroll hide-scroll show-desktop mb-4">    
+        </div>
+    </div>
+</section>
+</header>
+<!-- end of header -->
+<!-- section live-chat -->
+<section id="live-chat">
+    <div class="live-chat-icon bg-white d-flex align-items-center justify-content-center rounded-circle">
+        <small><i class="far fa-comment-alt fa-2x text-primary "></i></small>
+    </div>
+</section>
+<!-- end of section live-chat -->
+<!-- section core-services -->
+<section id="core-services">
+    <div class="container my-5">
+        <!-- title -->
+        <div class="row">
+            <div class="col text-center">
+                <h3 class="display-4 text-capitalize text-dark mb-0">
+                    <strong>Our core services</strong>
+                </h3>
+                <p class="mt-2 text-muted my-3">Everyline of code and every pixel we deliever is carefully craftedby our in-house team.
+                    While constantly looking for a new horizons, challenges and opportunities in the programming field. We have  focused our attention on these core areas:
+                </p>
             </div>
         </div>
-        </section>
-        <!-- Services section -->
-        <section class="services section" id="services">
-            <span class="section-subtitle">What I Offer</span>
-            <h2 class="section-title">My Services</h2>
-            <div class="services__container bd-grid">
-
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Web Design</h3>
-                    <p class="services__description">This service that I offer is of high quality, and above all the great experience of my mentor who will supervise my work</p>
+        <!-- end title -->
+        <div class="row mt-3 justify-content-center">
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-right border-bottom ">
+                <div class="text-center ">
+                    <i class="fab fa-html5 fa-4x text-danger"></i>
                 </div>
-                <div class="services__content">
-                    <i class="bx bx-user services__icon"></i>
-                    <h3 class="services__title">UI / UX Design</h3>
-                    <p class="services__description">This service that I offer is of high quality, and above all the great experience of my mentor who will supervise my work</p>
+                <p class="text-muted mt-3 mb-0">PSD to HTML a.k.a.</p>
+                <h4 class="mt-0 mb-3">Front-end Coding</h4>
+                <p class="text-muted">We convert any design file: PSD, Sketch, Ai, Adobe XD to pixel perfect,
+                     semantic and standard compliant HTML/CSS template.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-right border-bottom ">
+                <div class="text-center ">
+                    <i class="fab fa-wordpress-simple fa-4x text-primary"></i>
                 </div>
-                <div class="services__content">
-                    <i class="bx bx-pen services__icon"></i>
-                    <h3 class="services__title">Content Writing</h3>
-                    <p class="services__description">This service that I offer is of high quality, and above all the great experience of my mentor who will supervise my work</p>
+                <p class="text-muted mt-3 mb-0">PSD to WordPress a.k.a.</p>
+                <h4 class="mt-0 mb-3">WordPress Development</h4>
+                <p class="text-muted">We turn designs into high-quality,
+                    fully functional CMS driven websites based on WordPress.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-bottom">
+                <div class="text-center ">
+                    <i class="fas fa-envelope-open-text fa-4x text-info"></i>
                 </div>
-                <div class="services__content">
-                    <i class="bx bx-support services__icon"></i>
-                    <h3 class="services__title">Technical Support</h3>
-                    <p class="services__description">This service that I offer is of high quality, and above all the great experience of my mentor who will assist my work</p>
+                <p class="text-muted mt-3 mb-0">PSD to HTML Email a.k.a.</p>
+                <h4 class="mt-0 mb-3">Email Template Coding</h4>
+                <p class="text-muted">High class HTML coding for responsive email marketing templates,
+                     coming with integration into email marketing software.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+        </div>
+        <div class="row mt-2 justify-content-center border-top">
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-right border-bottom ">
+                <div class="text-center ">
+                    <i class="fab fa-weibo fa-4x magenta-color"></i>
                 </div>
-                <div class="services__content">
-                    <i class="bx bxs-wrench services__icon"></i>
-                    <h3 class="services__title">Maintenance of Existing Sites</h3>
-                    <p class="services__description">This service that I offer is of high quality, and above all the great experience of my mentor who will assist my work</p>
+                <p class="text-muted mt-3 mb-0">PSD to WooCommerce a.k.a.</p>
+                <h4 class="mt-0 mb-3">WooCommerce Development</h4>
+                <p class="text-muted">We know the ins and outs of WooCommerce and we can help you get your
+                     eCommerce site running in a matter of weeks.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-right border-bottom ">
+                <div class="text-center ">
+                    <i class="fab fa-shopify fa-4x text-success"></i>
                 </div>
-                <div class="services__content">
-                    <i class="bx bxs-magic-wand services__icon"></i>
-                    <h3 class="services__title">Thematic Sites</h3>
-                    <p class="services__description">Based on my mentor experience we can propose thematic sites</p>
+                <p class="text-muted mt-3 mb-0">PSD to Shopify a.k.a.</p>
+                <h4 class="mt-0 mb-3">Shopify Development</h4>
+                <p class="text-muted">We can turn design mock-ups from any format (PSD, Ai, Sketch, Adobe XD, etc.)
+                     into a fully functional, responsive Shopify site.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+            <!-- single col -->
+            <div class="col-md-4 text-center mt-4 mb-3 pb-3 border-bottom">
+                <div class="text-center ">
+                    <i class="fab fa-whmcs fa-4x text-warning"></i> 
+                </div>
+                <p class="text-muted mt-3 mb-0">React and Vue.js a.k.a.</p>
+                <h4 class="mt-0 mb-3">Single page APPs</h4>
+                <p class="text-muted">Performance, Scalability, Reusable Components, 
+                    One Way Data Flow - the perfect ingredients for single-page applications.
+                </p>
+                <button class="btn btn-outline-dark btn-lg text-capitalize mt-4">more details</button>
+            </div>
+            <!-- end of single col -->
+        </div>
+    </div>
+</section>
+<!-- end of core-services -->
+<!-- section team & slider-->
+<section id="carousel">
+    <div id="team-slider" class="carousel slide bg-light py-3" data-ride="carousel">
+        <ol class="carousel-indicators ">
+          <li data-target="#team-slider" data-slide-to="0" class="active carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/EvanShoemaker.jpeg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="1" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/leila-tudury.jpg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="2" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/dino-pele.jpg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="3" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/sam-maldonado.jpg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="4" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/jon-paul.jpg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="5" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/adam-broadway.jpg" alt="First slide">
+          </li>
+          <li data-target="#team-slider" data-slide-to="6" class="carousel-indicator-img">
+            <img class=" border rounded-circle " src="images/justin-baloun.jpg" alt="First slide">
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- start single item -->
+          <div class="carousel-item active bg-light">
+              <div class="row">
+                  <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/EvanShoemaker.jpeg" alt="First slide" width="300" height="300">
+                    </div>
+                  </div>
+                  <div class="col-md-7 card-item py-5 my-5">
+                    <h3 class="text-dark">Evan Shoemaker</h3>
+                    <p class="text-muted mb-1">Founder + CEO</p>
+                    <h6 class="text-muted mb-5">WeBuild</h6>
+                    <blockquote class="blockquote">
+                        <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                      <p class="text-dark text-left pl-3 pb-4">
+                        Working with the htmlBurger team has been a huge success!
+                        They're good people who care deeply about our business!
+                      </p>  
+                    </blockquote>
+                  </div>
+              </div>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/leila-tudury.jpg" alt="First slide" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Leila Tudury</h3>
+                  <p class="text-muted mb-1">Director of Product</p>
+                  <h6 class="text-muted mb-5">Dictionary.com</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left text-dark fa-2x centering"></i>
+                      <p class="text-dark text-left pl-3 pb-4">
+                        Working with htmlBurger has been a great experience for us!
+                        htmlBurger has enabled us to move quickly and expand our portfolio.
+                      </p>
+                  </blockquote>
                 </div>
             </div>
-        </section>
-        <!-- Project_in_mind section -->
-        <section class="project section">
-            <div class="project__container bd-grid">
-                <div class="project__data">
-                    <h2 class="section__title project__title">Do you have something in mind ?</h2>
-                    <p class="project__description">If you have a project that you want to carry out, do not hesitate and tell me what it is, and what services I can offer you, contact me directly here.</p>
-                    <a href="#contact" class="button button__light">Contact Me</a>
-                </div>
-                <img src="img/project_in_mind-img.jpg" class="project__img" alt="">
-            </div>
-        </section>
-        <!-- Work section -->
-        <section class="works section" id="works">
-            <span class="section-subtitle">My Portfolio</span>
-            <h2 class="section-title">Recent Work</h2>
-
-            <div class="works__container bd-grid">
-                <div class="works__img">
-                    <img src="img/work_img-htmlBurger.png" alt="">
-                    <div class="works__data">
-                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">htmlBurgher</span>
-                        <span class="works__subtitle">Company Website</span>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/dino-pele.jpg" alt="First slide" width="300" height="300">
                     </div>
                 </div>
-                <div class="works__img">
-                    <img src="img/work_img-fruits_cart.JPG" alt="">
-                    <div class="works__data">
-                        <a href="https://github.com/Marius-MPA/htmlBurger-website" class="works__link" target="_blank"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">Fruits Market</span>
-                        <span class="works__subtitle">Shopping cart</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="img/work_img-workshop_cart.jpg" alt="">
-                    <div class="works__data">
-                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">Uncle John's Workshop</span>
-                        <span class="works__subtitle">Shopping cart</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="img/work_img-world_of_swiss.jpg" alt="">
-                    <div class="works__data">
-                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">World Of Swiss</span>
-                        <span class="works__subtitle">Company Website</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="img/work_img-building_management.jpg" alt="">
-                    <div class="works__data">
-                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">Building Management</span>
-                        <span class="works__subtitle">Angular Project</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="img/work_img-mountins_project.jpg" alt="">
-                    <div class="works__data">
-                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                        <span class="works__title">Mountains Project</span>
-                        <span class="works__subtitle">Angular Project</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Contact section -->
-        <section class="contact section" id="contact">
-            <span class="section-subtitle">Contact Me</span>
-            <h2 class="section-title">Get In Touch</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <div class="contact_-inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="email" placeholder="Email" class="contact__input">
-                    </div>
-                    <input type="text" placeholder="Project" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                    <input type="submit" value="Send Message" class="button contact__button">
-                </form>
-                <div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Call me</h3>
-                        <span class="contact__text">004 0741 509 596</span>
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">E-mail</h3>
-                        <span class="contact__text">pascalau_marius@yahoo.com</span>
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Location</h3>
-                        <span class="contact__text">Str. Fantanele no.32 ap. 12</span>
-                        <span class="contact__text">Cluj-Napoca, Romania</span>
-                    </div>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Dino Pelle</h3>
+                  <p class="text-muted mb-1">Managing Partner</p>
+                  <h6 class="text-muted mb-5">Engage321</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                    <p class="text-dark text-left pl-3 pb-4">
+                        Our business relies on fast and reliable talent and support. htmlBurger gives us that and much more,
+                        while freeing us to do what we do best: great design.
+                    </p> 
+                  </blockquote>
                 </div>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <h1 class="footer__title">Marius</h1>
-                <p class="footer__description">I am Marius and this is my personal website, consult me here.</p>
-                
-                <div class="footer__social">
-                    <a href="#" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" class="footer__link"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__link"><i class='bx bxl-twitter' ></i></a>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/sam-maldonado.jpg" alt="First slide" width="300" height="300">
+                    </div>
                 </div>
-
-                <p class="footer__copy">All rights reserved by MPA - 2020</p>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Sam Maldonado</h3>
+                  <p class="text-muted mb-1">Co-owner</p>
+                  <h6 class="text-muted mb-5">Wwwanted</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                    <p class="text-dark text-left pl-3 pb-4">
+                        Working with htmlBurger is like having a whole team of highly skilled colleagues.
+                        A winning team, definitely. Also we are functional & welcoming team.
+                    </p> 
+                  </blockquote>
+                </div>
             </div>
-        </footer>
-    </main>
-    <!-- Main JS -->
-    <script src="main.js"></script>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/jon-paul.jpg" alt="First slide" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Jon Paul</h3>
+                  <p class="text-muted mb-1">Executive Chef</p>
+                  <h6 class="text-muted mb-5">apmealprep</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                    <p class="text-dark text-left pl-3 pb-4">
+                        Htmlburger has been very open to us and all of our crazy ideas. They made it very easy for someone that has no idea how to code &
+                        develop a site.
+                    </p> 
+                  </blockquote>
+                </div>
+            </div>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/adam-broadway.jpg" alt="First slide" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Adam Broadway</h3>
+                  <p class="text-muted mb-1">CEO</p>
+                  <h6 class="text-muted mb-5">platformOS</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                    <p class="text-dark text-left pl-3 pb-4">
+                        Having worked with the HTMLBurger team previously, we were confident that Nate and the team would be able to use the best-practice coding standards.
+                    </p> 
+                  </blockquote>
+                </div>
+            </div>
+          </div>
+          <!-- end single item -->
+          <!-- start single item -->
+          <div class="carousel-item bg-light">
+            <div class="row">
+                <div class="col-md-5 py-5 my-5 text-center">
+                    <div class="image-item">
+                        <img class=" border rounded-circle image-item-picture" src="images/justin-baloun.jpg" alt="First slide" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-md-7 card-item py-5 my-5">
+                  <h3 class="text-dark">Justin Baloun</h3>
+                  <p class="text-muted mb-1">Founder</p>
+                  <h6 class="text-muted mb-5">Wheat Creative</h6>
+                  <blockquote class="blockquote">
+                    <i class="fas fa-quote-left fa-2x text-dark centering"></i>
+                    <p class="text-dark text-left pl-3 pb-4">
+                        We've consistently received the best support, account management,
+                        and expert insight you would hope to have from a great web partner.
+                    </p> 
+                  </blockquote>
+                </div>
+            </div>
+          </div>
+          <!-- end single item -->
+        </div>
+        <a class="carousel-control-prev" href="#team-slider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#team-slider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</section>
+<!-- end of section team & slider-->
+<!-- section blue -->
+<section id="blue-section" class="bg-primary py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 blue-section-left px-3 text-center my-auto">
+        <img class="img-fluid" src="./images/blue-section-img.svg" alt="blue image">
+      </div>
+      <div class="col-lg-6 mr-md-auto blue-section-right my-5 pr-5">
+        <h1 class="font-weight-bold text-white">Risk-Free Coding</h1>
+        <h1 class="font-weight-bold text-white">Services Tailored</h1>
+        <h1 class="font-weight-bold text-white">For Agencies</h1>
+        <div class="py-5 text-white"><i class="fas fa-sliders-h fa-2x"></i></div>
+        <p class="text-white">
+          We are prepared to handle part of your project without any obligations.
+          If you are happy with the process, we then move forward after the initial upfront payment.
+          If you are not satisfied with the first steps, and you do not wish to proceed.
+          No payment is required.
+        </p>
+        <div class="buttons mt4 mb-0 py-2 d-flex align-items-center">
+          <a href="#" class="btn-header btn-section-blue">
+              <span class="uppercase">request free test</span>
+              <p class="btn-shadow"></p>
+          </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of section blue -->
+<!-- section promise -->
+<section id="promise" class="py-5">
+  <div class="container">
+    <!-- title -->
+    <div class="row">
+      <div class="col text-center">
+        <h3 class="display-4 text-capitalize text-dark mb-0 promise-title">
+          <strong>Our promise</strong>
+        </h3>
+        <h5 class="mt-2 my-3 pb-4">
+          As part of our high quality service, we'd like to offer something extra too.
+        </h5>
+      </div>
+    </div>
+    <!-- end title --> 
+    <div class="row justify-content-center">
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="fas fa-award fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Top Code Quality</h5>
+            <small><p>What we promise is not simply code but rather a solution.
+              You get a W3C fully compliant markup with no compromise on quality.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="fas fa-ticket-alt fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Friendly and Responsive</h5>
+            <small><p>We know you look for positive attitude, timely reactions,
+              and flexibility. We are here to listen and give the utmost of our capabilities.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="fas fa-users fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Rockstar Team</h5>
+            <small><p>Expertise is our USP. You get an all-star squad of experienced geeks,
+                       fully at your service and armed with coding skills to die for.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="fas fa-location-arrow fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Fast Turn-arounds</h5>
+            <small><p>Speed matters no less than quality. We are fast,
+               agile and capable of delivering top notch quality code in a timeframe chosen by you.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="far fa-life-ring fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Life-time support</h5>
+            <small><p>The ultimate proof of our code quality: you get our non-expiring support.
+               If any bugs happen to appear in the future, just write us a line.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+      <!-- single promise -->
+      <div class="col-md-6 col-xl-4 py-5">
+        <div class="row center-single-promise">
+          <div class="col-md-3">
+            <i class="far fa-envelope fa-3x"></i>
+          </div>
+          <div class="col-md-9">
+            <h5>Non-Disclosure Agreement</h5>
+            <small><p>Your artwork is fully yours and we would never claim otherwise.
+               You get our word and our full willingness to sign an NDA.
+            </p></small>
+          </div>
+        </div>
+      </div>
+      <!-- end single promise -->
+    </div>
+  </div>
+</section>
+<!-- end of section promise -->
+<!-- section red -->
+<section id="red" >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 section-red-aside">
+        <div class="figure img-fluid height-80"></div>
+      </div>
+      <div class="col-md-6 bg-danger px-2 py-5 d-flex justify-content-center">
+        <div class="section-red-content">
+          <h1 class="font-weight-bold text-capitalize text-white">We Are Not Just Another Coding Company.</h1>
+          <div class="py-4 text-white"><i class="fas fa-sliders-h fa-2x"></i></div>
+          <p class="text-light">
+              We are an ambitious bunch of creatives who simply want to make a difference with their work.
+              Giving it all we’ve got while genuinely having fun is the formula helping us face every challenge with a smile.
+          </p>
+          <p class="text-light py-3">
+            Here is some information about htmlBurger in numbers:
+          </p>
+          <ul class="list-numbers text-white py-3">
+            <li>
+              <strong>12</strong>
+              <span class="text-uppercase">years of experience</span>
+            </li>
+            <li>
+              <strong>25000</strong>
+              <span class="text-uppercase">projects completed</span>
+            </li>
+            <li>
+              <strong>100</strong>
+              <span class="text-uppercase">talented developers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+<!-- end of section red -->
+<!-- section be-a-match -->
+<section id="match">
+  <div class="container-fluid bg-warning py-5 text-center">
+    <div class="row py-3">
+      <div class="col match-images">
+        <div class="match-html-cup"></div>
+        <div class="match-css-cup"></div>
+        <h1 class="py-5 my-2">Think We'd <strong>Be a Match?</strong></h1>
+        <!-- btns -->
+        <div class="buttons mt-3 pb-3 mb-5 d-flex align-items-center justify-content-center">
+          <a href="#" class="btn-header">
+              <span class="uppercase">start your project</span>
+              <p class="btn-shadow"></p>
+          </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of section be-a-match -->
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row py-5 px-5 justify-content-center">
+      <div class="col-md-4 col-lg-3">
+        <div class="row">
+          <div class="col text-center text-md-left">
+            <b><h5 class="font-weight-bold" style="padding-left: 44px; padding-bottom: 15px;">Quick Links</h5></b>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left">
+            <ul class="remove-margin-bottom remove-margin-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Samples</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">For Agencies</a></li>
+              <li><a href="#">How it Works</a></li>
+              <li><a href="#">Pricing & Services</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center text-md-left">
+            <ul class="remove-margin-left">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Labs</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Our Policies</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Client Area</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="row">
+          <div class="col text-center text-md-left">
+            <b><h5 class="font-weight-bold" style="padding-left: 44px; padding-bottom: 15px;">Services</h5></b>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col text-center text-md-left">
+            <ul class="text-center text-md-left pr-0 remove-margin-left">
+              <li><a href="#">Front-End Coding</a></li>
+              <li><a href="#">WordPress Development</a></li>
+              <li><a href="#">Email Template Coding</a></li>
+              <li><a href="#">Squarespace Development</a></li>
+              <li><a href="#">BigCommerce Development</a></li>
+              <li><a href="#">WooCommerce Development</a></li>
+              <li><a href="#">Shopify Development</a></li>
+              <li><a href="#">CraftCMS Development</a></li>
+              <li><a href="#">HubSpot Development</a></li>
+              <li><a href="#">Single Page APPs</a></li>
+              <li><a href="#">Design Service</a></li>
+              <li><a href="#">Risk-Free Coding Services</a></li>
+              <li><a href="#">Tailored For Agencies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="row">
+          <div class="col text-center text-md-left">
+            <b><h5 class="font-weight-bold" style="padding-left: 44px; padding-bottom: 15px;">Get in Touch</h5></b>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col text-center">
+            <ul class="text-center text-md-left remove-margin-left">
+              <li><a href="#">Order Now</a></li>
+              <li><a href="#">Get a Quik Quote</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">&nbsp;</a></li>
+              <li><a href="#"><i class="fas fa-mobile-alt"></i><strong class="pl-2"> US:</strong> +1 844 224 1228</a></li>
+              <li><a href="#"><i class="fas fa-mobile-alt"></i><strong class="pl-2"> UK:</strong> +44 203 637 5848</a></li>
+              <li class="center-li"><a class="d-flex" href="#"><i class="far fa-envelope-open"></i><p class="m-0 pl-2">info@htmlburger.com</p></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 text-right pr-lg-5">
+        <div class="footer-logo mb-5 pb-2">
+          <a href="#" class="d-flex justify-content-center justify-content-lg-end">
+            <aside>
+              <span></span>
+              <span></span>
+            </aside>
+            <strong class="pl-2">
+              <p class="m-0 pr-2">HTML</p>Burger
+            </strong>
+          </a>
+        </div>
+        <div class="footer-media mt-5 pt-5">
+          <ul class="d-flex justify-content-center justify-content-lg-end">
+            <li><a href="" class="p-1"><i class="fab fa-github"></i></a></li>
+            <li><a href="" class="p-1"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" class="p-1"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <p class="mb-0">&copy; Copyright 2008-2020 htmlBurger.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- script js -->
+<script src="./app.js"></script>
+
 </body>
 </html>
-
 
